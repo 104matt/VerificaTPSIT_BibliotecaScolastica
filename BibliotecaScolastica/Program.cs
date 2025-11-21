@@ -11,6 +11,7 @@ namespace BibliotecaScolastica
         static void Main(string[] args)
         {
             // Commento per pull
+
         }
     }
 }
