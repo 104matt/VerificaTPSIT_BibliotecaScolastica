@@ -28,5 +28,10 @@ namespace BibliotecaScolastica
             return $"{Autore}, {Titolo}, {AnnoDiPubblicazione}, {Editore}, {NumeroDiPagine}";
         }
 
+        public int readingTime()
+        {
+            return NumeroDiPagine < 100 ? 1 : -1;
+        }
+
     }
 }
