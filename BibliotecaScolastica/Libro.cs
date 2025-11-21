@@ -30,7 +30,7 @@ namespace BibliotecaScolastica
 
         public int readingTime()
         {
-            return NumeroDiPagine < 100 ? 1 : -1;
+            return NumeroDiPagine < 100 ? 1 : 2;
         }
 
     }
