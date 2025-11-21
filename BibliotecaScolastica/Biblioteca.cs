@@ -43,5 +43,25 @@ namespace BibliotecaScolastica
             return null;
         }
 
+        public List<Libro> RicercaLibroDaAutore(string autore)
+        {
+            var risultati = new List<Libro>();
+            if (string.IsNullOrWhiteSpace(autore))
+                return risultati;
+            for (int i = 0; i < LibriDisponibili.Count; i++)
+            {
+                var libro = LibriDisponibili[i];
+                if (libro != null && string.Equals(libro.Autore, autore, StringComparison.OrdinalIgnoreCase))
+                    risultati.Add(libro);
+            }
+            return risultati;
+        }
+
+        public int CalcolaNumeroLibri()
+        {
+            return LibriDisponibili.Count;
+        }   
+
+
     }
 }
